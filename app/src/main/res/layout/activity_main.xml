@@ -24,10 +24,12 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/addDiam"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
+        android:shadowColor="#452424"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
@@ -52,8 +54,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
+        android:background="@drawable/back"
+
         android:entries="@array/material"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,72 +65,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <TextView
-        android:id="@+id/msgMass"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/msgM"
-        android:textSize="18sp"
-        android:textAlignment="textEnd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/msgVolume" />
 
-    <TextView
-        android:id="@+id/resMass"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
-        android:gravity="right"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/msgMass"
-        app:layout_constraintTop_toBottomOf="@+id/resVolume" />
 
-    <TextView
-        android:id="@+id/msgSurfaceArea"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/msgArea"
-        android:textSize="18sp"
-        android:textAlignment="textEnd"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/msgMass" />
 
-    <TextView
-        android:id="@+id/msgVolume"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="75dp"
-        android:text="@string/msgVolume"
-        android:textAlignment="textEnd"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCulc" />
 
-    <TextView
-        android:id="@+id/resSurfaceArea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/msgSurfaceArea"
-        app:layout_constraintTop_toBottomOf="@+id/resMass" />
 
-    <TextView
-        android:id="@+id/resVolume"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="75dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/msgVolume"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCulc" />
+
+
+
+
+
+
 
     <TextView
         android:id="@+id/textView8"
@@ -140,6 +89,78 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/NumberDiameter" />
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCulc">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="60dp">
+
+            <TextView
+                android:id="@+id/msgVolume"
+                android:width="200dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/msgVolume"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/resVolume"
+                android:width="200dp"
+                android:padding="3dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="60dp">
+
+            <TextView
+                android:id="@+id/msgSurfaceArea"
+                android:width="180dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/msgArea"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/resSurfaceArea"
+                android:width="180dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="60dp">
+
+            <TextView
+                android:id="@+id/msgMass"
+                android:width="180dp"
+                android:text="@string/msgM"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/resMass"
+                android:width="180dp"
+                android:gravity="right"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

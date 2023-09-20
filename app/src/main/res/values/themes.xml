@@ -1,8 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Sphere7term" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Sphere7term" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/primaryColor</item>
+
+       <!-- <item name="backgroundColor">@color/background</item>
+        <item name="backgroundTint">@color/background</item>
+        <item name="backgroundTintMode">@color/background</item>
+        <item name="boxBackgroundColor">@color/background</item>
+        <item name="colorOnBackground">@color/background</item>
+        <item name="colorContainer">@color/background</item>
+        <item name="colorOnPrimaryContainer">@color/background</item>
+        <item name="tooltipForegroundColor">@color/background</item>
+        <item name="color">@color/background</item>-->
+
+
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 

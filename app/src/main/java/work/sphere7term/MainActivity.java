@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
             TextView result = findViewById(R.id.resSurfaceArea);
             Spinner spin = findViewById(R.id.spinner);
             String selected = spin.getSelectedItem().toString();
-            listResults = SurfaceArea(num, selected);
+            listResults = BallParameters(num, selected);
             resArea.setText(String.format("%.3f",(listResults.get(0))));
             resVolume.setText(String.format("%.3f",(listResults.get(1))));
             resMass.setText(String.format("%.3f",(listResults.get(2))));
             }
         });
     }
-    private ArrayList SurfaceArea(double diam, String material){
+    private ArrayList BallParameters(double diam, String material){
         ArrayList<Double> list = new ArrayList<>();
         double pi = Math.PI;
         double area = pi * diam * diam;
