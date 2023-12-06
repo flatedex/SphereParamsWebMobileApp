@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sphere7term</string>
+    <string name="app_name">SphereWeb7term</string>
     <string name="task">Вычисление параметров шара</string>
     <string name="buttonText">Вычислить</string>
     <string name="addDiam">Введите диаметр шара в метрах</string>
@@ -7,11 +7,14 @@
     <string name="msgVolume">Объем, м³</string>
     <string name="msgM">Масса, кг</string>
     <string name="mat">Выберите материал</string>
-    <string-array name="material">
+    <string-array name="material" id="69">
         <item>Вода 1000 кг/м³</item>
         <item>Золото 19300 кг/м³</item>
         <item>Латунь 8500 кг/м³</item>
         <item>Алмаз 3500 кг/м³</item>
         <item>Ртуть 13600 кг/м³</item>
     </string-array>
+    <string name="serverURL">worldlab.technolog.edu.ru/stud/group4/index.php</string>
+    <string name="connErr">Unable to connect to server</string>
+    <string name="enterDiam">Укажите диаметр</string>
 </resources>

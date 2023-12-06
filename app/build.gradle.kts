@@ -7,7 +7,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "work.sphere7term"
+        applicationId = "work.sphereWeb7term"
         minSdk = 30
         targetSdk = 33
         versionCode = 1
